@@ -1,11 +1,10 @@
-/* ===== GLOBAL ===== */
 body {
   margin: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   background: #f6f6fc;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .header {
   display: flex;
   align-items: center;
