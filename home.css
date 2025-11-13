@@ -1,0 +1,214 @@
+/* HERO SECTION */
+.hero {
+  padding: 90px 0 80px 0;
+  background: linear-gradient(120deg, #a8e8f0 0%, #dbe6f9 50%, #f3e7fa 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background: url('data:image/svg+xml;utf8,<svg width="38" height="38" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="%23557cbe"/></svg>');
+  z-index: 0;
+}
+.hero-content {
+  color: #36416d;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  animation: fadeZoomIn 1s ease;
+}
+.hero-content h1 {
+  font-size: 45px;
+  margin: 0 0 14px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.hero-content p {
+  font-size: 18px;
+  margin:0 auto 22px;
+  font-weight: 500;
+  color: #6c63a6;
+  max-width: 640px;
+}
+.hero-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 32px;
+  background: #557cbe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 4px 18px rgba(48,90,160,0.12);
+  transition: all 0.25s ease;
+}
+.hero-btn:hover {
+  background-color: #b690f7;
+  color: #36416d;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+/* HERO CATEGORY GRID */
+ .hero-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+.cat-row {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #5d6396;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cat-image-box {
+  background: #fff;
+  border-radius: 15px;
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(90,90,140,0.08);
+  transition: all 0.2s ease;
+}
+.cat-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.cat-card:hover .cat-image-box {
+  transform: translateY(-10px) scale(1.07);
+  box-shadow: 0 16px 50px rgba(201,199,238,0.4);
+}
+.cat-card span {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* ANIMATION */
+@keyframes fadeZoomIn {
+  from { opacity:0; transform:scale(0.95);}
+  to { opacity:1; transform:scale(1);}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* TRENDING NOW SECTION */
+.trending {
+  background: #f7f9fe;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  color: #36416d;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.trending-row {
+  display: flex;
+  gap: 25px;
+  justify-content: flex-start;
+  padding: 0 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.trending-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.trending-row::-webkit-scrollbar-thumb {
+  background: #c5c9f5;
+  border-radius: 6px;
+}
+
+.trending-row::-webkit-scrollbar-thumb:hover {
+  background: #a8adef;
+}
+
+/* Product cards */
+.product-card {
+  flex: 0 0 220px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(90, 90, 140, 0.1);
+  padding: 14px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(150, 150, 200, 0.25);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.product-card h4 {
+  font-size: 1.05rem;
+  color: #444a85;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  color: #6a63a7;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ABOUT SECTION */
+.about {
+  background: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+  color: #36416d;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #5a578c;
+}
