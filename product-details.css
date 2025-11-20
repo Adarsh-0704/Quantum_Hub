@@ -1,0 +1,154 @@
+/* PAGE LAYOUT */
+.product-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* IMAGE ZOOM */
+.product-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.product-shoes {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.4s ease;
+  cursor: zoom-in;
+}
+
+.product-shoes:hover {
+  transform: scale(1.2);
+}
+
+/* PRODUCT INFO */
+.product-info h1 {
+  font-size: 28px;
+  color: #2d3436;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #636e72;
+  margin-bottom: 12px;
+}
+
+/* PRICE BOX */
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discount {
+  color: #0b8b07;
+  font-weight: 600;
+}
+
+/* SIZES */
+.sizes {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.sizes button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.sizes button:hover {
+  background: #2e2f31;
+  color: #fff;
+}
+
+/* COLORS */
+.color-area {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.specific-color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ddd;
+}
+
+.red { background: #d63031; }
+.black { background: #2d3436; }
+.blue { background: #0984e3; }
+
+/* DETAILS LIST */
+.details {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.details li {
+  margin-bottom: 6px;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-cart {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  background: #909a2a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buy-now {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  background: #2c7a29;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background: #076fbd;
+}
+
+.buy-now:hover {
+  background: #b82525;
+}

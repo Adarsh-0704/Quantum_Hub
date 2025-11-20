@@ -1,7 +1,9 @@
-body{
+/* PAGE BACKGROUND */
+body {
   background: #f2f3fa;
 }
-/* PAGE TITLE */
+
+/* HERO TITLE */
 .products-hero {
   text-align: center;
   padding: 25px 10px 15px;
@@ -16,66 +18,76 @@ body{
 
 .products-hero p {
   color: #636e72;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 6px;
 }
 
-/* GRID */
+/* SECTION LABEL */
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  color: #2d3436;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* PRODUCT GRID */
 .product-grid {
-  padding: 30px 20px;
+  padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 30px;
   max-width: 1000px;
   margin: 0 auto 40px;
 }
 
 /* PRODUCT CARD */
-.product-card {
-  background: #ffffff;
+.product {
+  background: #fff;
   border-radius: 16px;
   padding: 14px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-  border: 1px solid #ececec;
+  border: 1px solid #eaeaea;
   transition: 0.25s ease;
   text-align: center;
 }
 
-.product-card:hover {
+.product:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.10);
 }
 
-/* IMAGE BOX WITH FIXED HEIGHT */
-.img-box {
+/* IMAGE BOX */
+.img {
   width: 100%;
-  height: 220px;
+  height: 230px;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.img-box img {
+.img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* TEXT */
-.product-card h3 {
+.product h3 {
   margin: 12px 0 6px;
   font-size: 18px;
-  color: #2d3436;
   font-weight: 600;
+  color: #2d3436;
 }
 
-.product-card .price {
+.price {
   color: #0984e3;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
 }
 
 /* BUTTON */
-.view-btn {
+.button {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 14px;
@@ -87,6 +99,46 @@ body{
   transition: 0.2s ease;
 }
 
-.view-btn:hover {
+.button:hover {
   background: #076fbd;
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(90deg, #4f7d63, #6ea88e);
+  color: #fff;
+  padding: 35px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #dfe6e9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
 }

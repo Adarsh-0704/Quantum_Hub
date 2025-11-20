@@ -1,57 +1,58 @@
 /* PAGE HEADING */
-.cat-hero {
+.category-hero {
   text-align: center;
   padding: 35px 20px 20px;
   background: #f4f6ff;
 }
 
-.cat-hero h1 {
+.category-hero h1 {
   font-size: 38px;
   color: #2d3436;
   margin: 0;
 }
 
-.cat-hero p {
+.category-hero p {
   color: #636e72;
   font-size: 18px;
   margin-top: 6px;
 }
 
 .container {
-  max-width: 920px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 /* CATEGORY CARD */
-.cat-card {
+.category-card {
   background: #ffffff;
-  padding: 22px;
-  border-radius: 16px;
+  padding: 32px;
+  border-radius: 20px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.05);
   margin-bottom: 24px;
   transition: 0.25s ease;
   border: 1px solid #ebedff;
 }
 
-.cat-card:hover {
+.category-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
 /* CARD HEADER */
-.cat-header {
+.category-header {
+  font-size: 25px;
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 14px;
 }
 
-.cat-header i {
+.category-header i {
   font-size: 30px;
   color: #0984e3;
 }
 
-.cat-header h2 {
+.category-header h2 {
   margin: 0;
   font-size: 24px;
   color: #2d3436;
@@ -59,15 +60,15 @@
 }
 
 /* SUBCATEGORIES */
-.subcats {
+.subcategories {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.subcats a {
+.subcategories a {
   background: #dbe2ff;
-  padding: 6px 14px;
+  padding: 7px 18px;
   border-radius: 20px;
   font-size: 14px;
   color: #2d3436;
@@ -75,7 +76,7 @@
   transition: 0.2s;
 }
 
-.subcats a:hover {
+.subcategories a:hover {
   background: #c9d4ff;
   color: #0984e3;
 }

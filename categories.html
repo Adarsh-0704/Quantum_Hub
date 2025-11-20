@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categories • Quantum Hub</title>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="categories.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -15,27 +15,31 @@
     <img src="Images/logo.png" class="logo-img">
     Quantum Hub
   </div>
-  <nav class="nav-links">
+  <div class="search-bar">
+      <input type="text" placeholder="Search for products, brands and more" />
+      <span class="search-icon material-icons">search</span>
+    </div>
+  <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="categories.html" class="active">Categories</a>
-    <a href="deals.html">Deals</a>
+    <a href="products.html">Products</a>
     <a href="cart.html">Cart</a>
     <a href="login.html">Login</a>
   </nav>
 </header>
 
-<section class="cat-hero">
+<section class="category-hero">
   <h1>All Categories</h1>
   <p>Browse all departments and explore everything we offer.</p>
 </section>
 
-<section class="cat-wrapper container">
-  <div class="cat-card">
-    <div class="cat-header">
+<section class="category-wrap container">
+  <div class="category-card">
+    <div class="category-header">
       <i class="devices"></i>
       <h2>Electronics</h2>
     </div>
-    <div class="subcats">
+    <div class="subcategories">
       <a href="products.html">Mobiles</a>
       <a href="products.html">Laptops</a>
       <a href="products.html">Headphones</a>
@@ -44,12 +48,12 @@
     </div>
   </div>
 
-  <div class="cat-card">
-    <div class="cat-header">
+  <div class="category-card">
+    <div class="category-header">
       <i class="shirt"></i>
       <h2>Clothing</h2>
     </div>
-    <div class="subcats">
+    <div class="subcategories">
       <a href="products.html">Men</a>
       <a href="products.html">Women</a>
       <a href="products.html">Kids</a>
@@ -58,12 +62,12 @@
     </div>
   </div>
 
-  <div class="cat-card">
-    <div class="cat-header">
+  <div class="category-card">
+    <div class="category-header">
       <i class="home"></i>
       <h2>Home & Decor</h2>
     </div>
-    <div class="subcats">
+    <div class="subcategories">
       <a href="products.html">Furniture</a>
       <a href="products.html">Lamps</a>
       <a href="products.html">Wall Art</a>
@@ -71,12 +75,12 @@
     </div>
   </div>
 
-  <div class="cat-card">
-    <div class="cat-header">
+  <div class="category-card">
+    <div class="category-header">
       <i class="book-2"></i>
       <h2>Books</h2>
     </div>
-    <div class="subcats">
+    <div class="subcategories">
       <a href="products.html">Fiction</a>
       <a href="products.html">Self-Help</a>
       <a href="products.html">Education</a>
@@ -85,6 +89,16 @@
   </div>
 
 </section>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 <strong>Quantum Hub</strong>. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

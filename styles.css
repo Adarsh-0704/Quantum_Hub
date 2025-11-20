@@ -4,6 +4,9 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   background: #f6f6fc;
   padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER */
@@ -11,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, #00b894, #0984e3);
+  background: linear-gradient(90deg, #7fae8a, #4f7d63);
   padding: 16px 32px;
   color: #fff;
   box-shadow: 0 2px 8px rgba(10, 60, 80, 0.08);
@@ -68,20 +71,20 @@ body {
   color:#888;
   margin-right: 12px;
 }
-.nav-links {
+.navbar {
   display: flex;
   align-items: center;
   gap: 28px;
   font-size: 18px;
 }
-.nav-links a {
+.navbar a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
   padding: 4px 0;
 }
-.nav-links a:hover {
+.navbar a:hover {
   color: #dfe6e9;
   border-bottom: 2px solid #fff;
 }
