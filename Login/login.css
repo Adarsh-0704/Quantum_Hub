@@ -62,7 +62,7 @@
 .button {
   width: 100%;
   border: none;
-  background: linear-gradient(90deg, #00b894, #0984e3);
+  background-color: #008080;
   padding: 14px 0;
   border-radius: 10px;
   color: #fff;
