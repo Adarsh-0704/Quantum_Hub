@@ -252,3 +252,53 @@ html {
 .footer-links a:hover {
   color: #ffffff;
 }
+
+@media (max-width: 480px){
+  .hero{
+    padding: 50px 15px 40px;
+  }
+  .hero-content h1{
+    font-size: 24px;
+  }
+  .hero-content p{
+    font-size: 15px;
+  }
+  .hero-btn{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  .category-img{
+    width: 120px;
+    height: 120px;
+  }
+  .category-card span{
+    font-size: 15px;
+  }
+  .trending{
+    padding: 40px 0;
+  }
+  .trending-row{
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .products{
+    flex-basis: 150px;
+    padding: 10px;
+  }
+  .products img{
+    height: 120px;
+  }
+  .about h2{
+    font-size: 25px;
+  }
+  .about p{
+    font-size: 15px;
+  }
+  .footer{
+    padding: 24px 0;
+  }
+  .footer-links{
+    gap: 10px;
+  }
+}
